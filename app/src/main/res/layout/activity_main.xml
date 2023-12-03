@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/phoneNumber_inputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:hint="@string/phonenumber"
+        android:theme="@style/ThemeOverlay.AppTheme.TextInputEditText.Outlined"
+        app:boxBackgroundColor="@color/lightGray"
+        app:boxCornerRadiusBottomEnd="8dp"
+        app:boxCornerRadiusBottomStart="8dp"
+        app:boxCornerRadiusTopEnd="8dp"
+        app:boxCornerRadiusTopStart="8dp"
+        app:boxStrokeColor="@color/color_state_selector"
+        app:boxStrokeErrorColor="@color/red"
+        app:boxStrokeWidth="1.50dp"
+        app:boxStrokeWidthFocused="2dp"
+        app:cursorColor="@color/blue"
+        app:cursorErrorColor="@color/red"
+        app:errorEnabled="true"
+        app:errorIconDrawable="@null"
+        app:hintAnimationEnabled="false"
+        app:hintTextColor="@color/dark_blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.287"
+        app:prefixText="+998"
+        app:prefixTextAppearance="@style/PrefixTextAppearance"
+        app:prefixTextColor="@color/darker">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/phoneNumber_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:digits="1234567890()- "
+            android:inputType="number"
+            android:maxLength="24"
+            android:maxLines="1"
+            android:textColor="@color/darkGray"
+            android:textSize="18sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/bank_card_inputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/card_number"
+        android:theme="@style/ThemeOverlay.AppTheme.TextInputEditText.Outlined"
+        app:boxBackgroundColor="@color/lightGray"
+        app:boxCornerRadiusBottomEnd="8dp"
+        app:boxCornerRadiusBottomStart="8dp"
+        app:boxCornerRadiusTopEnd="8dp"
+        app:boxCornerRadiusTopStart="8dp"
+        app:boxStrokeColor="@color/color_state_selector"
+        app:boxStrokeErrorColor="@color/red"
+        app:boxStrokeWidth="1.50dp"
+        app:boxStrokeWidthFocused="2dp"
+        app:cursorColor="@color/blue"
+        app:cursorErrorColor="@color/red"
+        app:errorEnabled="true"
+        app:errorIconDrawable="@null"
+        app:hintAnimationEnabled="false"
+        app:hintTextColor="@color/dark_blue"
+        app:layout_constraintEnd_toEndOf="@+id/phoneNumber_inputLayout"
+        app:layout_constraintStart_toStartOf="@+id/phoneNumber_inputLayout"
+        app:layout_constraintTop_toBottomOf="@+id/phoneNumber_inputLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/bank_card_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:digits="1234567890 "
+            android:inputType="number"
+            android:maxLength="19"
+            android:maxLines="1"
+            android:textColor="@color/darkGray"
+            android:textSize="18sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/date_inputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/date"
+        android:theme="@style/ThemeOverlay.AppTheme.TextInputEditText.Outlined"
+        app:boxBackgroundColor="@color/lightGray"
+        app:boxCornerRadiusBottomEnd="8dp"
+        app:boxCornerRadiusBottomStart="8dp"
+        app:boxCornerRadiusTopEnd="8dp"
+        app:boxCornerRadiusTopStart="8dp"
+        app:boxStrokeColor="@color/color_state_selector"
+        app:boxStrokeErrorColor="@color/red"
+        app:boxStrokeWidth="1.50dp"
+        app:boxStrokeWidthFocused="2dp"
+        app:cursorColor="@color/blue"
+        app:cursorErrorColor="@color/red"
+        app:errorEnabled="true"
+        app:errorIconDrawable="@null"
+        app:hintAnimationEnabled="false"
+        app:hintTextColor="@color/dark_blue"
+        app:layout_constraintEnd_toEndOf="@+id/phoneNumber_inputLayout"
+        app:layout_constraintStart_toStartOf="@+id/phoneNumber_inputLayout"
+        app:layout_constraintTop_toBottomOf="@+id/bank_card_inputLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/date_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:digits="1234567890. "
+            android:inputType="number"
+            android:maxLength="24"
+            android:maxLines="1"
+            android:textColor="@color/darkGray"
+            android:textSize="18sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
