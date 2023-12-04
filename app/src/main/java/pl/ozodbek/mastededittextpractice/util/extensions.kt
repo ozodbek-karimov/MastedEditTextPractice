@@ -15,6 +15,7 @@ inline fun <T : ViewBinding> AppCompatActivity.viewBinding(
         bindingInflater.invoke(layoutInflater)
     }
 
+
 fun TextInputEditText.setMask(mask: String, onUnmaskedString: (String?) -> Unit) {
     val listener = MaskedTextChangedListener(
         mask,
@@ -39,6 +40,19 @@ fun TextInputEditText.setMask(mask: String, onUnmaskedString: (String?) -> Unit)
     listener.autoskip = true
 }
 
+
 fun View.getColor(color: Int): Int {
     return ContextCompat.getColor(this.context, color)
+}
+
+fun View.onClick(clickListener: (View) -> Unit) {
+    setOnClickListener(clickListener)
+}
+
+fun View.show() {
+    this.visibility = View.VISIBLE
+}
+
+fun View.gone() {
+    this.visibility = View.GONE
 }
