@@ -84,7 +84,7 @@ class MainActivity : AppCompatActivity() {
 
     @SuppressLint("SetTextI18n")
     private fun setTextViewsText() {
-        binding.phoneNumberTv.text = "PhoneNumber: +998$unMuskedValueOfPhoneNumber"
+        binding.phoneNumberTv.text = "+998$unMuskedValueOfPhoneNumber"
         binding.bankCardTv.text = unMuskedValueOfCardNumber
         binding.dateTv.text = unMuskedValueOfDateNumber
     }
